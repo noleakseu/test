@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en"/>
+    <meta name="description" content="Tracking test"/>
+    <title>Tracking demo</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+<div class="header pt-3 text-center">
+    <h2>Tracking demo</h2>
+</div>
+<div class="container text-center">
+    <div class="row col-md pt-3 text-left">
+        <div class="row col-md pt-3 text-left">
+            <p>
+                Despite the fact that HTTP is a stateless protocol, the headers, context and body are capable to persist
+                among browsing sessions that is a core feature to track a visitor.
+                This page demonstrates methods of tracking without using JavaScript.
+            </p>
+            <p>
+                Try to refresh this page several times, reopen the tab, reopen the browser and finally, open it in Private (Incognito) mode.
+            </p>
+        </div>
+    </div>
+
+    <h4 class="row col-md text-left">Visits by</h4>
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-header">
+                <h3>Cookie</h3>
+            </div>
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item" src="//tracker.noleaks.eu/cookie.php"></iframe>
+                </div>
+                <div class="text-left">
+                    <p>
+                        HTTP Cookie is a key-value pair set by the Web server and transmitted to the browser in the form
+                        of HTTP response header.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Etag</h3>
+            </div>
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item" src="//tracker.noleaks.eu/etag.php"></iframe>
+                </div>
+                <div class="text-left">
+                    <p>
+                        HTTP Etag is a token of a specific version of the resource and set by the Web server in the form
+                        of HTTP response header.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Redirect</h3>
+            </div>
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item" src="//tracker.noleaks.eu/redirect.php"></iframe>
+                </div>
+                <div class="text-left">
+                    <p>
+                        HTTP 301 Moved Permanently is a redirection instruction set by the Web server in the form of
+                        HTTP response.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h3>Last-Modified</h3>
+            </div>
+            <div class="card-body">
+                <div class="embed-responsive embed-responsive-21by9">
+                    <iframe class="embed-responsive-item" src="//tracker.noleaks.eu/last.php"></iframe>
+                </div>
+                <div class="text-left">
+                    <p>
+                        HTTP Last-Modified is a timestamp of the resource set by the Web server in the form of HTTP response header.
+                        Since 01-01-101 may hold 60.5 billion uniques.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="header pt-3 text-center text-monospace font-weight-bold">reload me!</h5>
+
+    <h4 class="row col-md pt-3 text-left">Privacy policy</h4>
+    <div class="row col-md text-left">
+        <p>
+            The demonstration may set pseudo-random online identifier. But don't worry!
+            The identifier is not shared, used solely for this demo and will be removed in 5 minutes automatically.
+        </p>
+    </div>
+</div>
+
+<div class="container pt-4 my-md-5 pt-md-5 border-top text-left">
+    <small class="d-block mb-3 text-muted">
+        &copy; NoLeaks 2019-2020. Your attention is always welcome at &#105;&#110;&#102;&#111;&#64;&#110;&#111;&#108;&#101;&#97;&#107;&#115;&#46;&#101;&#117;
+    </small>
+</div>
+</body>
+</html>
